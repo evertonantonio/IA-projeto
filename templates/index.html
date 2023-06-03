@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Qual animal?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpaperaccess.com/full/135494.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        h1 {
+            color: #333333;
+            text-align: center;
+            font-family: Consolas;
+            font-size: 50px;
+        }
+        
+        form {
+            text-align: center;
+            margin-top: 165px;
+        }
+        
+        input[type="file"] {
+            display: block;
+            margin: 0 auto;
+            font-size: 18px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Cobra, Leão, Tubarão ou Zebra?</h1>
+        
+        <form action="http://127.0.0.1:5000/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

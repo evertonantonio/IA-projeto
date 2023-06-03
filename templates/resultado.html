@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{resultado}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        
+        div {
+            margin-top: 50px;
+        }
+        
+        h1 {
+            color: #333333;
+            font-family: Consolas;
+            font-size: 50px;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>{{resultado}}</h1>
+        <img src="{{ image_path }}" alt="imagem"  />
+        <a href="http://127.0.0.1:5000/">Nova Consulta</a>
+    </div>
+</body>
+</html>
