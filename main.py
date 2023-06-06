@@ -35,13 +35,12 @@ def get_class_info(img_processed):
 def home():
     return render_template('index.html')
 
-
 @app.route('/resultado')
 def resultado():
     return render_template('index.html')
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/inicio', methods=['POST'])
 def predict():
     file = request.files['file']
 
